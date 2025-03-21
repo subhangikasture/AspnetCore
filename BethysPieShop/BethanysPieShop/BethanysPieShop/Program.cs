@@ -1,6 +1,10 @@
+using BethanysPieShop.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews(); /// Add MVC services
+builder.Services.AddScoped<ICategoryRepository, MockCategoryRepository>(); // Add scoped service for ICategoryRepository
+builder.Services.AddScoped<IPieRepository, MockPieRepository>(); // Add scoped service for IPieRepository
 
 var app = builder.Build();
 
