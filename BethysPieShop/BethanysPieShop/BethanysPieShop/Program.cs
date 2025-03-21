@@ -1,6 +1,16 @@
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddControllersWithViews(); /// Add MVC services
+
 var app = builder.Build();
-builder.Services.AddControllersWithViews();
-app.MapGet("/", () => "Hello World!");
+
+app.UseStaticFiles();   //Use static files e.g. css, js, images
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseDeveloperExceptionPage(); //Use developer exception page when working on development environment
+}
+
+app.MapDefaultControllerRoute();  // Map default controller route
 
 app.Run();
