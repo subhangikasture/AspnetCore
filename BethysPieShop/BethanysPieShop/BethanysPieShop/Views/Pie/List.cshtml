@@ -1,26 +1,18 @@
-﻿<!DOCTYPE html>
+﻿@model BethanysPieShop.Models.ViewModels.PieListViewModel
+<!DOCTYPE html>
 <head>
-	<title>List of Pies</title>
+	<title>Bethany's Pie Shop</title>
 </head>
 
 <body>
-	<h1>Bethany's Pie Shop</h1>
 	<h1>@ViewBag.CurrentCategory</h1>
-	<h2>List of Pies</h2>
-	<table>
-		<tr>
-			<th>Name</th>
-			<th>Price</th>
-			<th>Is Pie of the Week</th>
-		</tr>
-		@foreach (var pie in Model)
-		{
-			<tr>
-				<td>@pie.Name</td>
-				<td>@pie.Price</td>
-				<td>@pie.IsPieOfTheWeek</td>
-			</tr>
-		}
-	</table>
+	@foreach (var pie in Model.Pies)
+	{
+		<div>
+			<h2>@pie.Name</h2>
+			<h3>@pie.Price.ToString("c")</h3>
+			<h4>@pie.Category</h4>
+		</div>
+	}
 </body>
 </html>
