@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<head>
+	<title>List of Pies</title>
+</head>
+
+<body>
+	<h1>Bethany's Pie Shop</h1>
+	<h1>@ViewBag.CurrentCategory</h1>
+	<h2>List of Pies</h2>
+	<table>
+		<tr>
+			<th>Name</th>
+			<th>Price</th>
+			<th>Is Pie of the Week</th>
+		</tr>
+		@foreach (var pie in Model)
+		{
+			<tr>
+				<td>@pie.Name</td>
+				<td>@pie.Price</td>
+				<td>@pie.IsPieOfTheWeek</td>
+			</tr>
+		}
+	</table>
+</body>
+</html>
