@@ -21,6 +21,7 @@
                     (
                     new Pie
                     {
+                        PieId = 1,
                         Name = "Strawberry Pie",
                         Price = 15.95M,
                         ShortDescription = "Our famous strawberry pie!",
