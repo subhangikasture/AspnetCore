@@ -10,7 +10,9 @@ builder.Services.AddScoped<IPieRepository, PieRepository>(); // Add scoped servi
 
 // Configure DbContext with connection string
 builder.Services.AddDbContext<BethanysPieShopDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+{
+    options.UseSqlServer(builder.Configuration["ConnectionStrings:BethanysPieShopDbContextConnection"]);
+});
 var app = builder.Build();
 
 app.UseStaticFiles();   //Use static files e.g. css, js, images
@@ -22,5 +24,6 @@ if (app.Environment.IsDevelopment())
 
 app.MapDefaultControllerRoute();  // Map default controller route => "{Controller = Home}/{action = Index}/{id?}"
 
-DbInitializer.Seed(app); // Seed the database
+ DbInitializer.Seed(app); 
+
 app.Run();
