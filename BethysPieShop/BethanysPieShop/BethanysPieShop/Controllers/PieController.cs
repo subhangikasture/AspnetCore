@@ -22,5 +22,9 @@ namespace BethanysPieShop.Controllers
             PieListViewModel pieListViewModel = new PieListViewModel(_pieRepository.AllPies, "Cheese cake");
             return View(pieListViewModel);
         }
+        public IActionResult Details()
+        {
+            return View();
+        }
     }
 }
