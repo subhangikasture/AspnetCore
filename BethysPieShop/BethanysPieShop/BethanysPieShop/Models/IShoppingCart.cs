@@ -1,6 +1,6 @@
 ﻿namespace BethanysPieShop.Models
 {
-    public interface IShopingCart
+    public interface IShoppingCart
     {
         void AddToCart(Pie pie);
         int RemoveFromCart(Pie pie);
