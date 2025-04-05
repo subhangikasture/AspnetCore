@@ -27,5 +27,10 @@
 
             throw new NotImplementedException();
         }
+
+        public IEnumerable<Pie> SearchPies(string searchQuery)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
