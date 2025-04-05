@@ -1,0 +1,7 @@
+D:\Git\AspDotNetCore\BethysPieShop\BethanysPieShop\BethanysPieShopTests\bin\Debug\net8.0\CoverletSourceRootsMapping_BethanysPieShopTests
+D:\Git\AspDotNetCore\BethysPieShop\BethanysPieShop\BethanysPieShopTests\obj\Debug\net8.0\BethanysPieShopTests.csproj.AssemblyReference.cache
+D:\Git\AspDotNetCore\BethysPieShop\BethanysPieShop\BethanysPieShopTests\obj\Debug\net8.0\BethanysPieShopTests.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git\AspDotNetCore\BethysPieShop\BethanysPieShop\BethanysPieShopTests\obj\Debug\net8.0\BethanysPieShopTests.AssemblyInfoInputs.cache
+D:\Git\AspDotNetCore\BethysPieShop\BethanysPieShop\BethanysPieShopTests\obj\Debug\net8.0\BethanysPieShopTests.AssemblyInfo.cs
+D:\Git\AspDotNetCore\BethysPieShop\BethanysPieShop\BethanysPieShopTests\obj\Debug\net8.0\BethanysPieShopTests.csproj.CoreCompileInputs.cache
+D:\Git\AspDotNetCore\BethysPieShop\BethanysPieShop\BethanysPieShopTests\obj\Debug\net8.0\BethanysPieShopTests.sourcelink.json
