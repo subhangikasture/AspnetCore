@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews(); /// Add MVC services
+builder.Services.AddRazorPages(); // Add Razor Pages services
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>(); // Add scoped service for ICategoryRepository
 builder.Services.AddScoped<IPieRepository, PieRepository>(); // Add scoped service for IPieRepository
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
@@ -29,7 +30,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.MapDefaultControllerRoute();  // Map default controller route => "{Controller = Home}/{action = Index}/{id?}"
-
- DbInitializer.Seed(app); 
+app.MapRazorPages(); // Map Razor Pages
+DbInitializer.Seed(app); 
 
 app.Run();
