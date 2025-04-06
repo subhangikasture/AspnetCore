@@ -44,6 +44,7 @@ var app = builder.Build();
 app.UseStaticFiles();   //Use static files e.g. css, js, images
 app.UseSession();
 app.UseAuthentication(); // Use authentication middleware
+app.UseAuthorization();
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage(); //Use developer exception page when working on development environment
