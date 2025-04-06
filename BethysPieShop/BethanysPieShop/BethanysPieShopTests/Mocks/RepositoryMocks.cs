@@ -175,19 +175,19 @@ namespace BethanysPieShopTests.Mocks
                 {
                     CategoryId = 1,
                     CategoryName = "Fruit Pies",
-                    Description = "Lorem ipsum"
+                    CategoryDescription = "Lorem ipsum"
                 },
                 new Category()
                 {
                     CategoryId = 2,
                     CategoryName = "Cheese cakes",
-                    Description = "Lorem ipsum"
+                    CategoryDescription = "Lorem ipsum"
                 },
                 new Category()
                 {
                     CategoryId = 3,
                     CategoryName = "Fruit Pies",
-                    Description = "Seasonal pies"
+                    CategoryDescription = "Seasonal pies"
                 }
             };
 
