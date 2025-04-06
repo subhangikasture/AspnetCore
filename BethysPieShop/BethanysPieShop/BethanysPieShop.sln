@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BethanysPieShop", "Bethanys
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BethanysPieShopTests", "BethanysPieShopTests\BethanysPieShopTests.csproj", "{44D17A4E-EC28-4F1A-AB24-40F975D4703D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloBlazor", "HelloBlazor\HelloBlazor.csproj", "{85FCC79E-86FE-41C6-B097-CCED63056C22}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{44D17A4E-EC28-4F1A-AB24-40F975D4703D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44D17A4E-EC28-4F1A-AB24-40F975D4703D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44D17A4E-EC28-4F1A-AB24-40F975D4703D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85FCC79E-86FE-41C6-B097-CCED63056C22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85FCC79E-86FE-41C6-B097-CCED63056C22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85FCC79E-86FE-41C6-B097-CCED63056C22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85FCC79E-86FE-41C6-B097-CCED63056C22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
