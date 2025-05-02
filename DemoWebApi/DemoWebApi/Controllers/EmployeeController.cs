@@ -24,9 +24,12 @@ namespace DemoWebApi.Controllers
         }
 
         [HttpPost("Post")]
-        public void Post(Employee employeeData)
+        public IActionResult Post(Employee employeeData)
         {
             employee.AddEmployeeDetails(employeeData);
+            // Assuming employeeData.Id is now set after saving
+            return CreatedAtAction(nameof(Get), new { id = employeeData.Id }, employeeData);
+            // return Created();
         }
     }
 }
