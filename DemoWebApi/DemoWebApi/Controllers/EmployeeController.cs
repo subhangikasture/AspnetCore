@@ -31,5 +31,17 @@ namespace DemoWebApi.Controllers
             return CreatedAtAction(nameof(Get), new { id = employeeData.Id }, employeeData);
             // return Created();
         }
+
+
+        [HttpGet("/Employee/GetById")]
+        public IActionResult Search(int id)
+        {
+          Employee e=  employee.SearchEmployee(id);
+            if( e == null)
+            {
+                return NotFound($"Employee with {id} doesn't exists");
+            }
+            return Ok(e);
+        }
     }
 }

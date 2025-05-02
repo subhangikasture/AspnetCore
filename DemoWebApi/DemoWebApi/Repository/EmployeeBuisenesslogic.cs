@@ -16,5 +16,9 @@ namespace DemoWebApi.Repository
          employees.Add(employee);
         }
        
+        public Employee SearchEmployee(int id)
+        {
+          return  employees.FirstOrDefault(e => e.Id == id);
+        }
     }
 }

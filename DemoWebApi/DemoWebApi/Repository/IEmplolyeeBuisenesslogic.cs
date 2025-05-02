@@ -7,5 +7,7 @@ namespace DemoWebApi.Repository
         public List<Employee> GetEmployeeDetails();
 
         public void AddEmployeeDetails(Employee employee);
+
+        public Employee SearchEmployee(int id);
     }
 }
