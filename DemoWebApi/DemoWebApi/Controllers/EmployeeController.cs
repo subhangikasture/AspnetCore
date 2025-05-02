@@ -17,10 +17,10 @@ namespace DemoWebApi.Controllers
         }
 
         [HttpGet("Get")]
-        
         public List<Employee> Get()
         {
-           return employee.GetEmployeeDetails();       
+            throw new NotImplementedException();
+          // return employee.GetEmployeeDetails();       
         }
 
         [HttpPost("Post")]
@@ -36,7 +36,8 @@ namespace DemoWebApi.Controllers
         [HttpGet("/Employee/GetById")]
         public IActionResult Search(int id)
         {
-          Employee e=  employee.SearchEmployee(id);
+            Employee e=  employee.SearchEmployee(id);
+
             if( e == null)
             {
                 return NotFound($"Employee with {id} doesn't exists");

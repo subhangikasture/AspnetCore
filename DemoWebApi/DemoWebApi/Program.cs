@@ -1,5 +1,7 @@
+using System;
 using DemoWebApi.Controllers;
 using DemoWebApi.Repository;
+using static System.Net.Mime.MediaTypeNames;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,10 +24,26 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.Use(async(context, next) =>
+{
+    try
+    {
+        await next();
+    }
+    catch(Exception ex)
+    {
+        context.Response.StatusCode = 500;//500 Internal server error 
+        await  context.Response.WriteAsync("hellooooo");
+    }
+});
+
+
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
 app.MapControllers();
+
+
 
 app.Run();
